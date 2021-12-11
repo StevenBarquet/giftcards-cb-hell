@@ -6,3 +6,7 @@ The Goal was to improve the code to be easier to read and modify, making it more
 
 ## ---Real progress
 The file withdraw was the my first target but could only refactor about 40%, when came the db cb hell I realised that was going to need to refactor the database file if I wanted to finish the withdraw file but unfortunatly I don't have more time for this challenge becouse of my work :(
+
+# ---Time invested
+-It took me about 30 min to read the code an think in how to improve it
+-The refactored code  too kme about 2 hours
