@@ -17,10 +17,12 @@ const money = (minEarnedToWithdraw / 1000).toFixed(2);
 
 const minEarnText = `You must earn at least ${minEarnedToWithdraw} coins ($${money}) through the offer walls before withdrawing.<br>This is to prevent abuse of the site bonuses. Please contact staff with any questions.`;
 
+// -------------------------------- Aux Functions --------------------------------
 function feedback(socket: WebSocket, feedback: string, feedbackType: string) {
   socket.emit('withdrawFeedback', feedback, feedbackType);
 }
 
+// -------------------------------- Main Functions --------------------------------
 function onsiteGiftcardWithdraw(socket: WebSocket, socketuser: SocketUser) {
   // ---------------- VALIDATIONS ------------------
   function checkWithdrawType(type: string) {
@@ -113,5 +115,5 @@ function onsiteGiftcardWithdraw(socket: WebSocket, socketuser: SocketUser) {
 }
 
 export default {
-  onsiteGiftcardWithdraw: () => {},
+  onsiteGiftcardWithdraw,
 };
