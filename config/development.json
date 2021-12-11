@@ -1,0 +1,4 @@
+{
+    "name": "Backend services: Development",
+    "mongoDB": "mongodb://localhost/playground"
+}

@@ -1,0 +1,6 @@
+{
+    "mail": {
+        "password": "env_name"
+    },
+    "mpToken": "env_name"
+}
